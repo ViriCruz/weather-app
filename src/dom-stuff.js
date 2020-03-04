@@ -6,6 +6,10 @@ const elements = () => {
   const convertToC = document.querySelector('#celsius');
   const convertToF = document.querySelector('#fahrenheit');
   const location = document.querySelector('input');
+  const details = document.querySelector('.none');
+  const bgImage = document.querySelector('.bg-image');
+  const photographer = document.querySelector('#photographer');
+  const pexels = document.querySelector('#pexels-credit span');
   return {
     currentTemp,
     description,
@@ -14,6 +18,10 @@ const elements = () => {
     convertToC,
     convertToF,
     location,
+    details,
+    bgImage,
+    pexels,
+    photographer,
   };
 };
 
