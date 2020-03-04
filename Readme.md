@@ -37,7 +37,7 @@ _city name, state and country code divided by comma, use ISO 3166 country codes_
 **List of country codes** [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)
 
 ## How to contribute and partipate
-Fork this repo and submit a PR for review and potential merge to main branch
+Fork this repo and submit a PR for review and potential merge to main branch. Feel free to leave feedback :smile:
 
 
 ## Authors
