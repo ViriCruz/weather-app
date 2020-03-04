@@ -46,4 +46,6 @@ Fork this repo and submit a PR for review and potential merge to main branch. Fe
 
 - Github: [@viricruz](https://github.com/viricruz)
 
+## License
 
+[MIT](LICENSE).
