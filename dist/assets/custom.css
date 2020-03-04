@@ -89,10 +89,11 @@ section {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('./test.jpg');
+  background-image: url('./default.jpg');
   z-index: -2;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 #pexels-credit {
@@ -259,4 +260,23 @@ form button {
   padding: 0 10px;
   width: 30%;
   height: 80px;
+}
+
+#not-found {
+  color: #232323;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+/* alert */
+.alert {
+  display: block;
+  background-color: #a22b2b70;
+  width: 40%;
+  min-width: 40%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px auto;
+  box-sizing: border-box;
+  color: #d2d2d2;
 }

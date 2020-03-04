@@ -1,25 +1,21 @@
 import weather from './get-weather';
-import elements from './dom-stuff';
+import domStuff from './dom-stuff';
 import temperature from './temperature';
 import extractNumber from './helpers';
-import getPhoto from './pexels-api/get-photo';
 
-const dom = elements();
+const dom = domStuff.elements();
 const convert = temperature();
 dom.submit.addEventListener('click', (e) => {
-  weather(dom.location.value)
-    .then((data) => {
-      const temp = temperature();
-      if (dom.details) dom.details.classList.remove('none');
-      dom.currentTemp.textContent = `${temp.kelvinToCelsius(data.main.temp)} °C`;
-      dom.description.textContent = data.weather[0].description;
-      dom.icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-      getPhoto();
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-
+  if (dom.location.value !== '') {
+    if (dom.alert) {
+      dom.alert.textContent = '';
+      dom.alert.classList.replace('alert', 'none');
+    }
+    weather(dom.location.value);
+  } else {
+    dom.alert.classList.replace('none', 'alert');
+    dom.alert.textContent = 'Location cannot be empty';
+  }
   e.preventDefault();
 });
 

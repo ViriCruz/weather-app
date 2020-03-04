@@ -1,7 +1,7 @@
-import elements from '../dom-stuff';
+import domStuff from '../dom-stuff';
 
-const getPhoto = async () => {
-  const query = elements().description.textContent.toLowerCase();
+const loadJson = async () => {
+  const query = domStuff.elements().description.textContent.toLowerCase();
   const pexelsApi = '563492ad6f91700001000001225e19125d534b7cbffbeecbe2524470';
   const response = await fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=15&page=1`, {
     mode: 'cors',
@@ -9,13 +9,26 @@ const getPhoto = async () => {
       Authorization: pexelsApi,
     },
   });
-  const data = await response.json();
-  console.log(data);
 
-  elements().bgImage.style.backgroundImage = `url('${data.photos[0].src.large}')`;
-  elements().pexels.textContent = 'Photos provided by Pexels. Photo by';
-  elements().photographer.textContent = data.photos[0].photographer;
-  elements().photographer.href = data.photos[0].url;
+  if (response.status === 200) {
+    const json = await response.json();
+    return json;
+  }
+
+  throw new Error(response.status);
+};
+
+const getPhoto = async () => {
+  let data;
+  try {
+    data = await loadJson();
+    const url = data.photos[0].src.large;
+    const { photographer } = data.photos[0];
+    const pexelsLink = data.photos[0].url;
+    domStuff.showPexelsPhoto(url, photographer, pexelsLink);
+  } catch (error) {
+    domStuff.elements().pexels.textContent = error;
+  }
 };
 
 export default getPhoto;
