@@ -1,11 +1,11 @@
 const elements = () => {
-  const currentTemp = document.querySelector('.container > p')
-  const description = document.querySelector('.weather p')
-  const icon = document.querySelector('.weather img')
-  const submit = document.querySelector('#submit')
-  const convertToC = document.querySelector('#celsius')
-  const convertToF = document.querySelector('#fahrenheit')
-  const location = document.querySelector('input')
+  const currentTemp = document.querySelector('.container > p');
+  const description = document.querySelector('.weather p');
+  const icon = document.querySelector('.weather img');
+  const submit = document.querySelector('#submit');
+  const convertToC = document.querySelector('#celsius');
+  const convertToF = document.querySelector('#fahrenheit');
+  const location = document.querySelector('input');
   return {
     currentTemp,
     description,
@@ -13,8 +13,8 @@ const elements = () => {
     submit,
     convertToC,
     convertToF,
-    location
-  }
-}
+    location,
+  };
+};
 
-export default elements
+export default elements;
