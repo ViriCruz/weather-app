@@ -56,6 +56,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+main > .layer {
+  background-color: #cad0e2;
 }
 
 section {
@@ -63,12 +68,57 @@ section {
   height: 420px;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+  -webkit-box-shadow: 1px 2px 17px -6px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 1px 2px 17px -6px rgba(0, 0, 0, 0.46);
+  box-shadow: 1px 2px 17px -6px rgba(0, 0, 0, 0.46);
+  display: flex;
+  flex-direction: column;
+}
+
+.layer {
+  z-index: -2;
+  background-color: #3e3e3e8a;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+}
+
+.bg-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('./test.jpg');
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pexels-credit {
+  align-self: flex-end;
+  color: #d2d2d2d6;
+  margin-top: 90px;
+}
+
+#pexels-credit span {
+  padding: 10px;
+  font-size: 12px;
+}
+
+#pexels-credit a {
+  text-decoration: none;
+  color: #cccccc94;
+  display: block;
+  padding: 10px 10px 10px 0px;
+  font-size: 12px;
+  font-style: italic;
 }
 
 section h1 {
   font-size: 48px;
   padding: 20px;
-  color: #3e3e3e;
+  color: #d2d2d2;
   font-weight: 800;
 }
 
@@ -76,10 +126,9 @@ form input {
  border: none;
  box-sizing: border-box;
  padding: 15px;
- color: #888;
+ color: #505050;
  border-radius: 5px;
- /* background-color: #f7f7f7; */
- background-color: #5a23d024;
+ background-color: #f7f7f7bf;
  outline: none;
  font-size: 24px;
  font-weight: 600;
@@ -91,8 +140,9 @@ form button {
   border-radius: 5px;
   padding: 15px 25px;
   background-color: #64b1687d;
-  color: #888;
+  color: #d2d2d2;
   font-size: 24px;
+  width: 215px;
 }
 
 .container {
@@ -100,30 +150,42 @@ form button {
   padding: 0 33px;
   justify-content: center;
   align-items: center;
-  color: #3e3e3e
+  color: #d2d2d2
 }
 
 .details {
   flex-direction: column;
-  width: 30%;
+  width: 40%;
+  padding: 0;
 }
+
+.none {
+  display: none;
+}
+
 
 .weather {
   display: flex;
-  padding-top: 15px;
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
   height: 80px;
+  color: #272727;
+  background: #ffffff96;
+  border-radius: 3px;
 }
 
 .weather p {
   font-size: 24px;
   text-transform: uppercase;
+  padding:0 24px;
 }
 
 .weather img {
   width: 65px;
   height: 65px;
+  border-left: 1px solid #628c98;
+  padding-left: 5px;
 }
 
 .actions {
@@ -165,7 +227,7 @@ form button {
   top: 2px;
   bottom: 2px;
   right: 2px;
-  background-color: #fff;
+  background-color: #3e3e3eb3;
 }
 
 .actions button:hover {
