@@ -51,7 +51,7 @@ const clearError = () => {
   if (error !== '') {
     elements().notFound.textContent = '';
   }
-}
+};
 
 const showPexelsPhoto = (url, photographer, pexelsLink) => {
   elements().bgImage.style.backgroundImage = `url('${url}')`;
@@ -61,8 +61,8 @@ const showPexelsPhoto = (url, photographer, pexelsLink) => {
 };
 
 const updateTemperature = (temperature, unitFormat) => {
-  elements().currentTemp.textContent =  `${temperature} °${unitFormat}`;
-}
+  elements().currentTemp.textContent = `${temperature} °${unitFormat}`;
+};
 
 export default {
   elements,
@@ -70,5 +70,5 @@ export default {
   showError,
   showPexelsPhoto,
   updateTemperature,
-  clearError
+  clearError,
 };

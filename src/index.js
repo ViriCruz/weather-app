@@ -4,7 +4,7 @@ import domStuff from './dom-stuff';
 const dom = domStuff.elements();
 dom.submit.addEventListener('click', (e) => {
   if (dom.location.value !== '') {
-    dom.location.rel = dom.location.value
+    dom.location.rel = dom.location.value;
     if (dom.alert) {
       dom.alert.textContent = '';
       dom.alert.classList.replace('alert', 'none');
@@ -21,8 +21,8 @@ dom.submit.addEventListener('click', (e) => {
 dom.convertToF.addEventListener('click', (e) => {
   const tempUnit = dom.currentTemp.textContent;
   if (tempUnit.match(['F']) === null) {
-    const location = dom.location.rel
-    openWeather.getTemperature(location, 'imperial')
+    const location = dom.location.rel;
+    openWeather.getTemperature(location, 'imperial');
     dom.convertToC.classList.remove('selected');
     e.target.classList.add('selected');
     e.preventDefault();
@@ -32,8 +32,8 @@ dom.convertToF.addEventListener('click', (e) => {
 dom.convertToC.addEventListener('click', (e) => {
   const tempUnit = dom.currentTemp.textContent;
   if (tempUnit.match(['C']) === null) {
-    const location = dom.location.rel
-    openWeather.getTemperature(location, 'metric')
+    const location = dom.location.rel;
+    openWeather.getTemperature(location, 'metric');
     dom.convertToF.classList.remove('selected');
     e.target.classList.add('selected');
     e.preventDefault();
