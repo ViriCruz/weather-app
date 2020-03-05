@@ -31,20 +31,27 @@ const elements = () => {
   };
 };
 
-const showWeather = (converter, data) => {
+const showWeather = (data) => {
   const dom = elements();
   const details = document.querySelector('.details.none');
   if (details) details.classList.remove('none');
   if (dom.details) dom.details.classList.remove('none');
-  dom.currentTemp.textContent = `${converter.kelvinToCelsius(data.main.temp)} °C`;
-  dom.description.textContent = data.weather[0].description;
-  dom.icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  dom.currentTemp.textContent = `${data.list[0].main.temp} °C`;
+  dom.description.textContent = data.list[0].weather[0].description;
+  dom.icon.src = `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
 };
 
 const showError = (error) => {
   elements().weatherContainer.classList.add('none');
   elements().notFound.textContent = error;
 };
+
+const clearError = () => {
+  const error = elements().notFound.textContent;
+  if (error !== '') {
+    elements().notFound.textContent = '';
+  }
+}
 
 const showPexelsPhoto = (url, photographer, pexelsLink) => {
   elements().bgImage.style.backgroundImage = `url('${url}')`;
@@ -53,9 +60,15 @@ const showPexelsPhoto = (url, photographer, pexelsLink) => {
   elements().photographer.href = pexelsLink;
 };
 
+const updateTemperature = (temperature, unitFormat) => {
+  elements().currentTemp.textContent =  `${temperature} °${unitFormat}`;
+}
+
 export default {
   elements,
   showWeather,
   showError,
   showPexelsPhoto,
+  updateTemperature,
+  clearError
 };

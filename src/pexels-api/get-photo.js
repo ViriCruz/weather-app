@@ -10,11 +10,8 @@ const loadJson = async () => {
     },
   });
 
-  if (response.status === 200) {
-    const json = await response.json();
-    return json;
-  }
-
+  if (response.ok) return await response.json();
+ 
   throw new Error(response.status);
 };
 
