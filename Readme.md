@@ -6,7 +6,7 @@ This project make use of [Weather Api](https://openweathermap.org/api) and [Pexe
 
 ## Demo down below
 <p>
-  <img src="https://lh4.googleusercontent.com/V9JTmaoR-U1sGN0ASTfB5ucKilGIZXCnuhxWJ9R_esYTpbQ5nHh19XNNlqAck0l4yvvXYuLC_K5Hms_yBH3P3dYdaFCF-LBB7dmfeYR3=s1588" alt="weather-app" />
+  <img src="https://media.giphy.com/media/KGeKMCoj27YWmLXQqS/giphy.gif" alt="weather-app" />
 </p>
 
 [Demo](https://viricruz.github.io/weather-app/)
