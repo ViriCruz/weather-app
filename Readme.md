@@ -4,7 +4,7 @@
 
 This project make use of [Weather Api](https://openweathermap.org/api) and [Pexels Api](https://www.pexels.com/api/documentation/), both are public.
 
-## Demo down below
+## Live Demo down below
 <p>
   <img src="https://media.giphy.com/media/KGeKMCoj27YWmLXQqS/giphy.gif" alt="weather-app" />
 </p>
@@ -17,8 +17,6 @@ This project make use of [Weather Api](https://openweathermap.org/api) and [Pexe
 - Node.js v13.2.0
 - webpack 4.41.5
 
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 * Node.js installed
 You will need Node.js up to v8
@@ -27,9 +25,12 @@ You will need Node.js up to v8
 Windows/ Mac
 
 
-### Install
+### Installing
 Clone project and run
 `npm install`
+
+### Running the tests
+This project doesn't count with automated tests.
 
 ### How to use
 You can type any city name, example **"New York"**. If you want more especification you can follow the next format
@@ -48,8 +49,13 @@ Fork this repo and submit a PR for review and potential merge to main branch. Fe
 
 👨‍💻 **Gabriela Cruz**
 
-- Github: [@viricruz](https://github.com/viricruz)
+
+- Github [@viricruz](https://github.com/ViriCruz/)
+
+- email me at viridiana.cruz.olivera@gmail.com
+
+- Linkedin [@viricruz](https://www.linkedin.com/in/viricruz/)
 
 ## License
 
-[MIT](LICENSE).
+This project is [MIT](LICENSE) licensed.
