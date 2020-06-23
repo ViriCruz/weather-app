@@ -1,8 +1,8 @@
 # Weather app
 
-> This is part of the async and await functions section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/weather-app and requirement from Microverse Program.
+> This is part of the async and await functions section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/weather-app for more details.
 
-This project make use of [Weather Api](https://openweathermap.org/api) and [Pexels Api](https://www.pexels.com/api/documentation/), both are public.
+This project makes use of [Weather Api](https://openweathermap.org/api) and [Pexels Api](https://www.pexels.com/api/documentation/), both are public.
 
 ## Live Demo down below
 <p>
@@ -26,23 +26,23 @@ Windows/ Mac
 
 
 ### Installing
-Clone project and run
+Clone project and run:
 `npm install`
 
 ### Running the tests
 This project doesn't count with automated tests.
 
 ### How to use
-You can type any city name, example **"New York"**. If you want more especification you can follow the next format
-_city name, state and country code divided by comma, use ISO 3166 country codes_. **For example:**
+You can type any city name, for example, **"New York"**. If you want more specifications you can follow the next format:
+_city name, state, and country-code divided by comma use ISO 3166 country codes_. **For example:**
 | city name  |    state    |  Country code |
 |------------|:-----------:|--------------:|
-| monterrey  | nuevo leon  |      mx       |
+| Monterrey  | nuevo leon  |      mx       |
 
 **List of country codes** [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)
 
-## How to contribute and partipate
-Fork this repo and submit a PR for review and potential merge to main branch. Feel free to leave feedback :smile:
+## How to contribute and participate
+Fork this repo and submit a PR for review and potential merge to the main branch. Feel free to leave feedback. :smile:
 
 
 ## Authors
@@ -54,7 +54,7 @@ Fork this repo and submit a PR for review and potential merge to main branch. Fe
 
 - email me at viridiana.cruz.olivera@gmail.com
 
-- Linkedin [@viricruz](https://www.linkedin.com/in/viricruz/)
+- LinkedIn [@viricruz](https://www.linkedin.com/in/viricruz/)
 
 ## License
 
