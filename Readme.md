@@ -2,6 +2,7 @@
 
 > This is part of the async and await functions section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/weather-app for more details.
 
+Search the current weather for any place, convert temperature between Celsius and Fahrenheit.
 This project makes use of [Weather Api](https://openweathermap.org/api) and [Pexels Api](https://www.pexels.com/api/documentation/), both are public.
 
 ## Live Demo down below
