@@ -36,6 +36,7 @@ dom.convertToC.addEventListener('click', (e) => {
     openWeather.getTemperature(location, 'metric');
     dom.convertToF.classList.remove('selected');
     e.target.classList.add('selected');
+    console.log('test ')
     e.preventDefault();
   }
 });
